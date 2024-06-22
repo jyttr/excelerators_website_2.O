@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import "../css/home.css"
 import "../css/events.css"
 import back_arrow from "../res/icons/back_arrow.png"
@@ -14,36 +14,44 @@ function Home() {
 
     const projects = [
 
-        [1, "ebike 2021", "ebike20221.jpg",
+
+        
+            [1, "EBlitz", "ebike20221.jpg",
 
 
-            "Zephyr, our E - bike is like a pleasant breeze but built to last.Our e - bike is meticulously crafted for safety, durability, and affordability through ethical engineering practices.It had achieved overall AIR - 7 at ETWDC 2022."
-        ],
+                "Emerging through the odds, revving into the track of future, here presenting E-blitz. The third member in our E-bike collection, E-blitz is exceptional in its design and working."
+            ],
 
-        [2, "Fuego F-15", "image3.jpg",
-
-
-            "ith unwavering enthusiasm, our team produced the Fuego F - 15, aimed to be unbeatable in the track, as its name says. with a compact and driver friendly design, our newest Go - Kart was indeed, majestic in the events, achieving an overall of AIR - 7 in FKDC Season 5, followed by an AIR - 1 in Cost, and AIR - 5 in Acceleration and Autocross."
-        ],
-
-        [3, "Fuego 2.O", "gokart20211.jpg",
+            [1, "ebike 2021", "ebike20221.jpg",
 
 
-            "The fire was unleashed again, with a bigger and better force, as we launched our new Go - kart, the Fuego 2.0, 2 years after its predecessor. With its ergonomic design, our Go - Kart did a fantastic feat in IKC Virtuals'22 achieving a score of AIR - 10 and Kerala - 1. "
-        ],
+                "Zephyr, our E - bike is like a pleasant breeze but built to last.Our e - bike is meticulously crafted for safety, durability, and affordability through ethical engineering practices.It had achieved overall AIR - 7 at ETWDC 2022."
+            ],
 
-        [
-
-            4, "Satva", "satva.jpg",
+            [2, "Fuego F-15", "image3.jpg",
 
 
-            "Sathva, a project dedicated to the betterment of society, it is lifting platform that empowers individuals with disabilities to access and exit the stage with ease"
+                "ith unwavering enthusiasm, our team produced the Fuego F - 15, aimed to be unbeatable in the track, as its name says. with a compact and driver friendly design, our newest Go - Kart was indeed, majestic in the events, achieving an overall of AIR - 7 in FKDC Season 5, followed by an AIR - 1 in Cost, and AIR - 5 in Acceleration and Autocross."
+            ],
+
+            [3, "Fuego 2.O", "gokart20211.jpg",
 
 
+                "The fire was unleashed again, with a bigger and better force, as we launched our new Go - kart, the Fuego 2.0, 2 years after its predecessor. With its ergonomic design, our Go - Kart did a fantastic feat in IKC Virtuals'22 achieving a score of AIR - 10 and Kerala - 1. "
+            ],
+
+            [
+
+                4, "Satva", "satva.jpg",
+
+
+                "Sathva, a project dedicated to the betterment of society, it is lifting platform that empowers individuals with disabilities to access and exit the stage with ease"
+
+
+
+            ]
 
         ]
-
-    ]
 
     const events = [
 
@@ -101,6 +109,46 @@ function Home() {
         ]
     ]
 
+    const members = [
+        ['Amal Salih J', 'panel', 'Manager', 'amal_salih.jpeg'],
+        ['Hari T', 'panel', 'Manager', 'hari_t_25.jpeg'],
+        ['Sreehari V B ', 'panel', 'Manager (Ebike Captian )', 'sreehari_25.jpeg'],
+        ['Deepu R', 'panel', 'Design Head', 'deepu_25.jpg'],
+        ['Pranav kp', 'panel', 'Production head ', 'pranav_kp.jpeg'],
+        ['Shifa Sherin', 'panel', 'Treasurer', 'shifa_25.jpg'],
+        ['Nithya A S', 'subpanel', '', 'nithya_as_26.jpg'],
+        ['Navadeep Satheesh', 'subpanel', '', 'navadeep_26.jpeg'],
+        ['Akshay Baburaj ', 'technical team', '', 'akshay_baburaj_26.jpg'],
+        ['J Maheshwari ', 'technical team', '', 'mahi_26.jpeg'],
+        ['Vishnu Kumar B', 'technical team', '', 'nithya_as_26.jpg'],
+        ['Jineesh C ', 'technical team', '', 'jineesh_26.jpeg'],
+        ['Nikhil c', 'Media', '', 'nikhil_c_26.jpg'],
+        ['Alex Benny', 'technical team', '', 'alex_benny_27.jpg'],
+        ['Yadhukrishna A ', 'technical team', '', 'yadhukrishna_26.jpg'],
+        ['Mehdabin E N ', 'technical team', '', 'nithya_as_26.jpg'],
+        ['S A SOORYA NARAYAN ', 'technical team', '', 'sooryanarayanan_26.jpg'],
+        ['SHUHAIB', 'technical team', '', 'shuhaib_26.jpg'],
+        ['Rohit Jayan ', 'technical team', '', 'rohth_jayan_26.jpg'],
+        ['GOKUL O K PILLAI ', 'technical team', '', 'gokul_25.jpg'],
+        ['Vignesh s s panicker ', 'technical team', 'Member ', 'vignesh_26.jpg'],
+        ['Ananthakrishnan K ', 'Media', '', 'ananthakrishnan_26.jpg'],
+        ['Junaid n v', 'technical team', '', 'junaid_26.jpg'],
+        ['Abhay v', 'Media', '', 'abhay_26.jpeg'],
+        ['Muhammed Fawas T ', 'technical team', '', 'fawas_27.jpg'],
+        ['Anjana Vijaya Kumar ', 'technical team', 'Auto electrical ', 'anjana_vijay_26.jpg'],
+        ['KARTHIK C ', 'technical team', '', 'karthik_c.jpg'],
+        ['Abhiram k', 'technical team', '', 'abhiram_26.jpg'],
+        ['Anshil', 'technical team', '', 'anshil_26.jpg'],
+        ['Aditya Jayan', 'technical team', '', 'aditya_jayan.jpg'],
+        ['Mohamed Akther ', 'technical team', '', 'akther_26.jpg'],
+        ['Eldhose Joy ', 'technical team', '', 'eldhose_joy_26.jpg'],
+        ['ASLAM ARIF K A', 'technical team', '', 'aslam_arif.jpg'],
+        ['S Vidyasagar ', 'technical team', 'Electrical  head ', 'vidya_sagar.jpg'],
+        ['DEVARAJ P', 'technical team', '', 'devraj_26.jpeg'],
+
+    ]
+
+
 
     const sponsers = [
 
@@ -126,9 +174,9 @@ function Home() {
     ]
 
 
-    useEffect(()=>{
+    useEffect(() => {
         // document.getElementById('video').play();
-    } ,[])
+    }, [])
 
 
 
@@ -164,7 +212,7 @@ function Home() {
                         {/* <div id="image3" class="image_slide_show_image"></div> */}
                         {/* <div id="image4" class="image_slide_show_image"></div> */}
                         {/* <div id="image1" class="image_slide_show_image"></div> */}
-                        <video controls  autoPlay id = "video" muted loop>
+                        <video controls autoPlay id="video" muted loop>
                             <source src={require("../res/videos/gokart_drift.mp4")} type="video/mp4" />
 
                         </video>
@@ -262,40 +310,44 @@ function Home() {
             </div>
 
 
-            {/*  
+
             <div id="members" class="section">
 
                 <h2 class="title">TEAM</h2>
 
                 <div class="members_grid">
 
-                    {% for member in members[:8] %}
 
-                    <div class="singleMember" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    {
 
-                        <div class="profile_pic">
-                            <img src="{{member[5]}}" alt="">
-
-                        </div>
-
-                        <div class="details">
-                            <h3>{{ member[1]}} {{ member[3]}} {{ member[2]}}</h3>
-                            <h3>position</h3>
-
-                        </div>
+                        members.map((member) => {
 
 
-                    </div>
+                            return (
 
-                    {% endfor %}
+                                <div class="members_page_singleMember" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                                    <div class="member_page_profile_pic">
+                                        <img src={require(`../res/all_images/members/${member[3]}`)} alt="" />
+                                    </div>
+                                    <div class="members_page_details">
+                                        <h3 className="members_page_name"  >{member[0]}</h3>
+                                        {/* <h4>{member[1]}</h4> */}
+                                        <h4 className='members_page_role' >{(member[1] == "panel") ? member[2] : member[1]}</h4>
+                                    </div>
+                                </div>
+
+                            )
+                        })
+
+                    }
 
 
                 </div>
 
-                <a href="/members" class="show_more more_members">SHOW MORE</a>
+                <a href="/team" class="show_more more_members">SHOW MORE</a>
             </div>
 
-            */}
+
 
             <div id="sponsers" class="section">
 

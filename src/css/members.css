@@ -63,6 +63,7 @@ h1{
 
 
 .members_page_grid{
+    margin-top: 160px;
     background-color: black;
     display: grid;
     grid-template-columns: repeat(auto-fit ,minmax(300px, 320px));

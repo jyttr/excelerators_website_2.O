@@ -55,7 +55,7 @@ body{
     margin-right: 0px;
     right: 0px;
 }   
-.projects :nth-child(even) .details{
+.projects :nth-child(even) .Projectdetails{
     left: unset;
     right: 35vw;
 }
@@ -157,15 +157,15 @@ body{
     font-size: 1.5rem;
 }
 
-.details{
+.Projectdetails{
     background-color: rgb(40, 40, 40);
     /* background-color: var(--background); */
     padding: 30px;
     position: absolute;
     width: 30vw;
-    height: max-content;
+    /* height: max-content; */
     opacity: 0.98;
-    height: 30vh;
+    /* height: 30vh; */
     top: 50%;
     transform: translateY(-50%);
     left: 40vw;
@@ -201,7 +201,7 @@ body{
         width: 85vw;
     }
     
-    .project_card .details{
+    .project_card .Projectdetails{
         position: relative;
         top: 0px;
         left:0px;

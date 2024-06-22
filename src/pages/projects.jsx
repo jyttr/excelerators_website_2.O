@@ -6,6 +6,13 @@ export default function Projects() {
 
     const projects = [
 
+
+        [1, "EBlitz", "ebike20221.jpg",
+
+
+            "Emerging through the odds, revving into the track of future, here presenting E-blitz. The third member in our E-bike collection, E-blitz is exceptional in its design and working."
+        ],
+
         [1, "ebike 2021", "ebike20221.jpg",
 
 
@@ -51,13 +58,13 @@ export default function Projects() {
                             <div class="project_card">
 
                                 <div class="image_holder">
-                                    <img src={require(`../res/all_images/${project[2]}`)} alt=""/>
+                                    <img src={require(`../res/all_images/${project[2]}`)} alt="" />
                                 </div>
 
 
-                                <div class="details">
+                                <div class="Projectdetails">
 
-                                    <h3 class="title">{ project[1] }</h3>
+                                    <h3 class="title">{project[1]}</h3>
                                     <p class="description">
 
                                         {project[3]}

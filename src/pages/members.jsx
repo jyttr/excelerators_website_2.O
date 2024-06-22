@@ -47,7 +47,7 @@ export default function Members() {
   return (
     <div id = "members_page">
 
-      <h1>TEAM</h1>
+      {/* <h1>TEAM</h1> */}
 
       <div class="members_page_grid">
 
