@@ -1,0 +1,219 @@
+body{
+    background-color: black;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+  
+}
+
+html{
+    width: 100%;
+}
+body{
+
+    /* overflow-x: hidden; */
+    width: 100%;
+    color: white;
+}
+
+#tire_mark{
+    width: 70vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#projects_heading{
+
+    margin-top: 15vh;
+
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+.projects :nth-child(even){
+    /* background-color: red; */
+}
+
+
+.projects :nth-child(even) .image_holder {
+  
+    /* position: absolute; */
+    margin-left: auto;
+    margin-right: 0px;
+    right: 0px;
+}   
+.projects :nth-child(even) .details{
+    left: unset;
+    right: 35vw;
+}
+
+.projects :nth-child(even) .view{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+
+@media( max-width : 100vh  ){
+
+    .projects :nth-child(even) .details {
+        right: 0px;
+        left:0px;
+    }
+    .projects :nth-child(even) .image_holder{
+    
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #tire_mark{
+        width: 100vw;
+    }
+}
+
+
+body{
+
+    overflow-x: hidden;
+   
+}
+
+
+.project_card{
+    overflow: hidden;
+    width: 80vw;
+    height: max-content;
+    /* background-color: rgb(0, 34, 255); */
+    position: relative;
+    margin: 100px;
+    /* margin: 0px 100px; */
+    
+}
+
+.title{
+    margin-left: 20px;
+}
+
+.image_holder{
+    /* position: absolute; */
+    width: 80vw;
+    overflow: hidden;
+    height: max-content;
+    width: max-content;
+
+    /* background-color: red; */
+   
+    overflow: visible;
+}
+
+.project_card img{
+    width: 50vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    /* position: absolute; */
+    top: 0px;
+    left: 0px;
+}
+
+.view{
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    transition: 0.4s;
+    /* margin: auto; */
+
+
+}
+
+.view:hover{
+    background-color: white;
+    color: red;
+
+}
+
+.title{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+.details{
+    background-color: rgb(40, 40, 40);
+    /* background-color: var(--background); */
+    padding: 30px;
+    position: absolute;
+    width: 30vw;
+    height: max-content;
+    opacity: 0.98;
+    height: 30vh;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40vw;
+    padding: 30px;
+
+}
+
+
+.description{
+    color: white;
+
+    top: 50%;
+    font-family: sans-serif;
+    padding : 20px;
+
+}
+
+@media ( max-width : 100vh  ){
+    body{
+        /* background-color: red; */
+    }
+
+    .project_card{
+        width: 80vw;
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project_card img{
+        
+        width: 85vw;
+    }
+    
+    .project_card .details{
+        position: relative;
+        top: 0px;
+        left:0px;
+        width: 70vw;
+        
+        transform: translateY(0%);
+        right: unset;
+    }
+
+    .view{
+        margin-left: auto ;
+        margin-right: auto ;
+        
+    }
+}
