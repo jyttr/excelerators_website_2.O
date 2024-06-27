@@ -52,15 +52,6 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-
-
-
-
-
-
-
-
-
           <Route path="/" element={<Home />} />
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="/projects" element={<Projects />} />
@@ -69,7 +60,6 @@ function App() {
 
           <Route path="/sponsers" element={<Sponsers />} />
           <Route path="/gallery" element={<Gallery />} />
-
 
         </Routes>
 
