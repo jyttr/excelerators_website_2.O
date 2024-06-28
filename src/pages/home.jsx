@@ -12,7 +12,7 @@ function Home() {
     [
       1,
       "EBlitz",
-      "ebike20221.jpg",
+      "Eblitz.jpg",
 
       "Emerging through the odds, revving into the track of future, here presenting E-blitz. The third member in our E-bike collection, E-blitz is exceptional in its design and working.",
     ],
@@ -75,13 +75,13 @@ function Home() {
     ["Shifa Sherin", "panel", "Treasurer", "shifa_25.jpg"],
     ["Nithya A S", "subpanel", "", "nithya_as_26.jpg"],
     ["Navadeep Satheesh", "subpanel", "", "navadeep_26.jpeg"],
-    ["Akshay Baburaj ", "technical team", "", "akshay_baburaj_26.jpg"],
+    ["Akshay Baburaj ", "technical team", "", "Akshay.jpg"],
     ["J Maheshwari ", "technical team", "", "mahi_26.jpeg"],
-    ["Vishnu Kumar B", "technical team", "", "nithya_as_26.jpg"],
+    ["Vishnu Kumar B", "technical team", "", "vishnuKumar.jpg"],
     ["Jineesh C ", "technical team", "", "jineesh_26.jpeg"],
     ["Nikhil c", "Media", "", "nikhil_c_26.jpg"],
     ["Alex Benny", "technical team", "", "alex_benny_27.jpg"],
-    ["Yadhukrishna A ", "technical team", "", "yadhukrishna_26.jpg"],
+    ["Yadhukrishna A ", "technical team", "", "yadhukrishna.png"],
     ["Mehdabin E N ", "technical team", "", "Mehdabin.jpg"],
     ["S A SOORYA NARAYAN ", "technical team", "", "sooryanarayanan_26.jpg"],
     ["SHUHAIB", "technical team", "", "shuhaib_26.jpg"],
@@ -355,7 +355,7 @@ function Home() {
 
             <tr>
               <td>Phone</td>
-              <td> +917736699463 +919207278035</td>
+              <td> +917736699463 +917736842519</td>
             </tr>
 
             <tr>
